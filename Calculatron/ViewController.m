@@ -30,5 +30,8 @@
 - (IBAction)onOperationTapped:(UIButton *)sender {
 }
 
+double op1 = self.operationOne.text.doubleValue;
+double op2 = self.operandTwo.text.doubleValue;
+
 
 @end
