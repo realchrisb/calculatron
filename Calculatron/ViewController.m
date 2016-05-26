@@ -39,11 +39,9 @@
     }
     else {
     }
-
-
-
-
 }
 
+    double op1 = self.operadOne.text.doubleValue;
+    double op2 = self.operadTwo.text.doubleValue;
 
 @end
