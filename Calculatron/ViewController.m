@@ -28,10 +28,27 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)onOperationTapped:(UIButton *)sender {
+    
+    double op1 = self.operandOne.text.doubleValue;
+    double op2 = self.operandtwo.text.doubleValue;
+    
+    if ([self.operationLabel.text isEqualToString:@"+"]) {
+        self.title = [NSString stringWithFormat:@"%2.f", op1 + op2];
+    }
+    else if ([self.operationLabel.text isEqualToString:@"-"]) {
+        self.title = [NSString stringWithFormat:@"%2.f", op1 - op2];
+        
+    }
+    else if ([self.operationLabel.text isEqualToString:@"*"]) {
+        self.title = [NSString stringWithFormat:@"%2.f", op1 * op2];
+    }
+    else {
+        self.title = [NSString stringWithFormat:@"%2.f", op1 / op2];
+        
+    }
 }
 
-double op1 = self.operationOne.text.doubleValue;
-double op2 = self.operandTwo.text.doubleValue;
+
 
 
 @end
