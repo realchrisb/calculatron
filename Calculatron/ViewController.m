@@ -28,6 +28,21 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)onOperationTapped:(UIButton *)sender {
+    if ([self.operationLabel.text isEqualToString:@"+"]) {
+    
+    }
+    else if ([self.operationLabel.text isEqualToString:@"-"]) {
+    
+    }
+    else if ([self.operationLabel.text isEqualToString:@"*"]) {
+   
+    }
+    else {
+    }
+
+
+
+
 }
 
 
